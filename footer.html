@@ -1,0 +1,57 @@
+<style>
+#retro-body {
+    font-family: sans-serif;
+    padding: 20px;
+    display: block;
+}
+
+#retro-form {
+    background-color: #EEE8D5;
+    padding: 20px;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+}
+
+#retro-form input[type="text"], #retro-form select {
+    color: #073642;
+    border: none;
+    padding: 5px;
+}
+
+#retro-form input[type="submit"] {
+    background-color: #4caf50;
+    color: #FDF6E3;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#retro-form input[type="submit"]:hover {
+    background-color: #2AA198;
+}
+</style>
+
+<br>
+<br>
+
+<b id="retro-body">
+    Hey you, don't know which course or job do you need, try our enhanced search 2.0 instead. Just type what you wish in mind and the results will pop out.
+    <br>
+    This is using elastic search, so it can be a bit slow, but it's worth it.
+</b>
+
+<form id="retro-form" action="search.php" method="get">
+    <label for="search">Search:</label>
+    <input type="text" name="search" placeholder="Search for courses or jobs">
+    <br>
+    <br>
+    <label for="search_type">Search type:</label>
+    <select name="search_type" title="Search type">
+        <option value="courses">Course</option>
+        <option value="jobs">Job</option>
+    </select>
+    <input type="submit" value="Search">
+</form>
+
+<br>
+<br>
